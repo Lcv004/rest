@@ -5,3 +5,6 @@
 [Dd]ebug/
 [Bb]in/
 [Oo]bj/
+
+# Other files
+*.code-workspace
