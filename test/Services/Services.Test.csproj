@@ -22,8 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Rest.Services\Rest.Services.csproj" />
-    <ProjectReference Include="..\Rest.Models\Rest.Models.csproj" />
+    <ProjectReference Include="..\..\src\Services\Services.csproj" />
+    <ProjectReference Include="..\..\src\Entities\Entities.csproj" />
+    <ProjectReference Include="..\Utils\Utils.csproj" />
   </ItemGroup>
 
 </Project>

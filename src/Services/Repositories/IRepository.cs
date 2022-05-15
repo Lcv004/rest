@@ -1,4 +1,5 @@
-﻿namespace Rest.Services;
+﻿namespace Services;
+
 public interface IRepository<TKey, TEntity> where TEntity : class
 {
     void Add(TEntity entity);
