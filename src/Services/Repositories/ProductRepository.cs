@@ -1,5 +1,5 @@
-using Rest.Models;
-namespace Rest.Services;
+using Entities;
+namespace Services;
 public class ProductRepository : IRepository<long, Product>
 {
     private Dictionary<long, Product> _productDictionary;

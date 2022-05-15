@@ -1,2 +1,2 @@
-namespace Rest.Models;
+namespace Entities;
 public record Inventory(long Id, long ProductId, uint Quantity);

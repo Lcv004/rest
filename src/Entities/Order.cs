@@ -1,2 +1,2 @@
-namespace Rest.Models;
+namespace Entities;
 public record Order(long Id, long CustomerId, string Status);

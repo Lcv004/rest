@@ -1,10 +1,9 @@
 using Xunit;
-using Rest.Models;
-using Rest.Services.Test.Utils.Fixtures;
+using Entities;
 using System.Collections.Generic;
 using System.Linq;
-
-namespace Rest.Services.Test;
+using Utils.Test;
+namespace Services.Test;
 
 public class ProductRepositoryTest
 {

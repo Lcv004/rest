@@ -1,6 +1,6 @@
-using Rest.Models;
+using Entities;
 using System.Collections.Generic;
-namespace Rest.Services.Test.Utils.Fixtures;
+namespace Utils.Test;
 
 public class ProductFixtures
 {
