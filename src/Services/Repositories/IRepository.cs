@@ -6,4 +6,5 @@ public interface IRepository<TKey, TEntity> where TEntity : class
     void Remove(TKey key);
     TEntity Get(TKey key);
     IEnumerable<TEntity> GetAll();
+    int Count();
 }
