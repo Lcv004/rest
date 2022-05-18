@@ -3,9 +3,9 @@ using Services;
 namespace Controllers;
 public class ProductController
 {
-    private ProductRepository _productRepository;
+    private IProductRepository _productRepository;
 
-    public ProductController(ProductRepository productRepository)
+    public ProductController(IProductRepository productRepository)
     {
         _productRepository = productRepository;
     }
