@@ -1,6 +1,6 @@
 using Entities;
 namespace Services;
-public class ProductRepository : IRepository<long, Product>
+public class ProductRepository : IProductRepository
 {
     private Dictionary<long, Product> _productDictionary;
     private long _id;
