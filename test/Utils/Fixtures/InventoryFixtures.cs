@@ -10,7 +10,7 @@ public class InventoryFixtures
         return inventory;
     }
 
-    public static List<Inventory> BuildInventorys(uint count)
+    public static List<Inventory> BuildInventories(uint count)
     {
         List<Inventory> inventories = new List<Inventory>();
         for (int i = 1; i <= count; i++)
