@@ -14,13 +14,8 @@ public class ChefRepository : IChefRepository
     public void Add(Chef entity)
     {
         _id++;
-        Chef newChef = entity with
-        {
-            Id = _id,
-            Name = entity.Name,
-            Experience = entity.Experience
-        };
-        _chefDictionary.Add(_id, newChef);
+        entity.Id = _id;
+        _chefDictionary.Add(_id, entity);
     }
 
     public void Remove(long key)

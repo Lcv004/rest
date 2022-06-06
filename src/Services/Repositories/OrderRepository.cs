@@ -14,13 +14,8 @@ public class OrderRepository : IOrderRepository
     public void Add(Order entity)
     {
         _id++;
-        Order newOrder = entity with
-        {
-            Id = _id,
-            CustomerId = entity.CustomerId,
-            Status = entity.Status
-        };
-        _orderDictionary.Add(_id, newOrder);
+        entity.Id = _id;
+        _orderDictionary.Add(_id, entity);
     }
 
     public void Remove(long key)

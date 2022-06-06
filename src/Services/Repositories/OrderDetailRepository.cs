@@ -14,14 +14,8 @@ public class OrderDetailRepository : IOrderDetailRepository
     public void Add(OrderDetail entity)
     {
         _id++;
-        OrderDetail newOrderDetail = entity with
-        {
-            Id = _id,
-            OrderId = entity.OrderId,
-            ProductId = entity.ProductId,
-            Quantity = entity.Quantity
-        };
-        _orderDetailDictionary.Add(_id, newOrderDetail);
+        entity.Id = _id;
+        _orderDetailDictionary.Add(_id, entity);
     }
 
     public void Remove(long key)
