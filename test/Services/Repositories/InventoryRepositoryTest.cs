@@ -21,7 +21,7 @@ public class InventoryRepositoryTest
     public void Remove_OneInventory_ShouldCountOneInventorys()
     {
         var inventoryRepository = new InventoryRepository();
-        var inventories = InventoryFixtures.BuildInventorys(2);
+        var inventories = InventoryFixtures.BuildInventories(2);
         inventoryRepository.Add(inventories[0]);
         inventoryRepository.Add(inventories[1]);
 
@@ -54,7 +54,7 @@ public class InventoryRepositoryTest
     public void GetAll_Inventorys_ShouldReturnThreeInventorys()
     {
         var inventoryRepository = new InventoryRepository();
-        var inventories = InventoryFixtures.BuildInventorys(3);
+        var inventories = InventoryFixtures.BuildInventories(3);
         inventoryRepository.Add(inventories[0]);
         inventoryRepository.Add(inventories[1]);
         inventoryRepository.Add(inventories[2]);
