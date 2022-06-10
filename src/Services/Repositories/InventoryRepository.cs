@@ -15,13 +15,8 @@ public class InventoryRepository : IInventoryRepository
     public void Add(Inventory entity)
     {
         _id++;
-        Inventory newInventory = entity with
-        {
-            Id = _id,
-            ProductId = entity.ProductId,
-            Quantity = entity.Quantity
-        };
-        _inventoryDictionary.Add(_id, newInventory);
+        entity.Id = _id;
+        _inventoryDictionary.Add(_id, entity);
     }
 
     public void Remove(long key)

@@ -14,13 +14,8 @@ public class ProductRepository : IProductRepository
     public void Add(Product entity)
     {
         _id++;
-        Product newProduct = entity with
-        {
-            Id = _id,
-            Name = entity.Name,
-            Difficulty = entity.Difficulty
-        };
-        _productDictionary.Add(_id, newProduct);
+        entity.Id = _id;
+        _productDictionary.Add(_id, entity);
     }
 
     public void Remove(long key)
