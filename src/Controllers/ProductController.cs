@@ -3,7 +3,7 @@ using Services;
 namespace Controllers;
 public class ProductController
 {
-    private IProductRepository _productRepository;
+    private readonly IProductRepository _productRepository;
 
     public ProductController(IProductRepository productRepository)
     {

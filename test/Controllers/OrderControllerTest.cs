@@ -1,13 +1,13 @@
-using Xunit;
+﻿using Entities;
 using Moq;
 using Services;
-using Entities;
 using Utils.Test;
+using Xunit;
 namespace Controllers.Test;
 
 public class OrderControllerTest
 {
-    private Mock<IOrderRepository> _mockOrderRepo;
+    private readonly Mock<IOrderRepository> _mockOrderRepo;
 
     public OrderControllerTest()
     {

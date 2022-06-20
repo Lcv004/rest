@@ -1,14 +1,13 @@
-using Xunit;
+﻿using Entities;
 using Moq;
 using Services;
-using Entities;
 using Utils.Test;
-using System.Collections.Generic;
+using Xunit;
 namespace Controllers.Test;
 
 public class ProductControllerTest
 {
-    private Mock<IProductRepository> _mockProductRepo;
+    private readonly Mock<IProductRepository> _mockProductRepo;
 
     public ProductControllerTest()
     {

@@ -1,4 +1,4 @@
-using Entities;
+﻿using Entities;
 namespace Utils.Test;
 
 public class ChefFixtures
@@ -11,8 +11,8 @@ public class ChefFixtures
 
     public static List<Chef> BuildChefs(uint count)
     {
-        List<Chef> chefs = new List<Chef>();
-        for (int i = 1; i <= count; i++)
+        var chefs = new List<Chef>();
+        for (var i = 1; i <= count; i++)
         {
             chefs.Add(BuildChef(i, "Chef " + i, i));
         }

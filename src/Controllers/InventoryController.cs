@@ -1,9 +1,9 @@
-using Entities;
+﻿using Entities;
 using Services;
 namespace Controllers;
 public class InventoryController
 {
-    private IInventoryRepository _inventoryRepository;
+    private readonly IInventoryRepository _inventoryRepository;
 
     public InventoryController(IInventoryRepository inventoryRepository)
     {

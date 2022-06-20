@@ -1,14 +1,14 @@
-using Xunit;
+﻿using Entities;
 using FakeItEasy;
 using Services;
-using Entities;
 using Utils.Test;
+using Xunit;
 namespace Controllers.Test;
 
 public class ChefControllerIntegrationTest
 {
-    private ChefRepository _chefRepository;
-    private IChefRepository _mockChefRepo;
+    private readonly ChefRepository _chefRepository;
+    private readonly IChefRepository _mockChefRepo;
 
     public ChefControllerIntegrationTest()
     {

@@ -1,9 +1,9 @@
-using Entities;
+﻿using Entities;
 using Services;
 namespace Controllers;
 public class ChefController
 {
-    private IChefRepository _chefRepository;
+    private readonly IChefRepository _chefRepository;
 
     public ChefController(IChefRepository chefRepository)
     {

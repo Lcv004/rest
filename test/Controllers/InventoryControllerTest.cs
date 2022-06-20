@@ -1,13 +1,13 @@
-using Xunit;
+﻿using Entities;
 using Moq;
 using Services;
-using Entities;
 using Utils.Test;
+using Xunit;
 namespace Controllers.Test;
 
 public class InventoryControllerTest
 {
-    private Mock<IInventoryRepository> _mockInventoryRepo;
+    private readonly Mock<IInventoryRepository> _mockInventoryRepo;
 
     public InventoryControllerTest()
     {

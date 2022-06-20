@@ -1,5 +1,4 @@
-using Entities;
-using System.Collections.Generic;
+﻿using Entities;
 namespace Utils.Test;
 
 public class OrderDetailFixtures
@@ -12,8 +11,8 @@ public class OrderDetailFixtures
 
     public static List<OrderDetail> BuildOrderDetails(uint count)
     {
-        List<OrderDetail> orderDetails = new List<OrderDetail>();
-        for (int i = 1; i <= count; i++)
+        var orderDetails = new List<OrderDetail>();
+        for (var i = 1; i <= count; i++)
         {
             orderDetails.Add(BuildOrderDetail(i, i, i, (uint)i));
         }

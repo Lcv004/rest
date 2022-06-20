@@ -1,13 +1,13 @@
-using Xunit;
+﻿using Entities;
 using Moq;
 using Services;
-using Entities;
 using Utils.Test;
+using Xunit;
 namespace Controllers.Test;
 
 public class ChefControllerTest
 {
-    private Mock<IChefRepository> _mockChefRepo;
+    private readonly Mock<IChefRepository> _mockChefRepo;
 
     public ChefControllerTest()
     {

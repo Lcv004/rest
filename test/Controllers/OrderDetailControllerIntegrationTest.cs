@@ -1,14 +1,14 @@
-using Xunit;
+﻿using Entities;
 using FakeItEasy;
 using Services;
-using Entities;
 using Utils.Test;
+using Xunit;
 namespace Controllers.Test;
 
 public class OrderDetailControllerIntegrationTest
 {
-    private OrderDetailRepository _orderDetailRepository;
-    private IOrderDetailRepository _mockOrderDetailRepo;
+    private readonly OrderDetailRepository _orderDetailRepository;
+    private readonly IOrderDetailRepository _mockOrderDetailRepo;
 
     public OrderDetailControllerIntegrationTest()
     {

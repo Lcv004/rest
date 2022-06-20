@@ -1,5 +1,4 @@
-using Entities;
-using System.Collections.Generic;
+﻿using Entities;
 namespace Utils.Test;
 
 public class InventoryFixtures
@@ -12,8 +11,8 @@ public class InventoryFixtures
 
     public static List<Inventory> BuildInventories(uint count)
     {
-        List<Inventory> inventories = new List<Inventory>();
-        for (int i = 1; i <= count; i++)
+        var inventories = new List<Inventory>();
+        for (var i = 1; i <= count; i++)
         {
             inventories.Add(BuildInventory(i, i, (uint)i));
         }

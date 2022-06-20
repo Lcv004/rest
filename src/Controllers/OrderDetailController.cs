@@ -1,9 +1,9 @@
-using Entities;
+﻿using Entities;
 using Services;
 namespace Controllers;
 public class OrderDetailController
 {
-    private IOrderDetailRepository _orderDetailRepository;
+    private readonly IOrderDetailRepository _orderDetailRepository;
 
     public OrderDetailController(IOrderDetailRepository orderDetailRepository)
     {

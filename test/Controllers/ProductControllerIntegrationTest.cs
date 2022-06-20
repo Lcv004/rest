@@ -1,14 +1,14 @@
-using Xunit;
+﻿using Entities;
 using FakeItEasy;
 using Services;
-using Entities;
 using Utils.Test;
+using Xunit;
 namespace Controllers.Test;
 
 public class ProductControllerIntegrationTest
 {
-    private ProductRepository _productRepository;
-    private IProductRepository _mockProductRepo;
+    private readonly ProductRepository _productRepository;
+    private readonly IProductRepository _mockProductRepo;
 
     public ProductControllerIntegrationTest()
     {
