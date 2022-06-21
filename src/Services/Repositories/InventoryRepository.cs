@@ -1,9 +1,9 @@
-using Entities;
+﻿using Entities;
 namespace Services;
 
 public class InventoryRepository : IInventoryRepository
 {
-    private Dictionary<long, Inventory> _inventoryDictionary;
+    private readonly Dictionary<long, Inventory> _inventoryDictionary;
     private long _id;
 
     public InventoryRepository()

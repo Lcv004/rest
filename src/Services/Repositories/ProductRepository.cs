@@ -1,8 +1,8 @@
-using Entities;
+﻿using Entities;
 namespace Services;
 public class ProductRepository : IProductRepository
 {
-    private Dictionary<long, Product> _productDictionary;
+    private readonly Dictionary<long, Product> _productDictionary;
     private long _id;
 
     public ProductRepository()

@@ -1,14 +1,14 @@
-using Xunit;
+﻿using Entities;
 using FakeItEasy;
 using Services;
-using Entities;
 using Utils.Test;
+using Xunit;
 namespace Controllers.Test;
 
 public class InventoryControllerIntegrationTest
 {
-    private InventoryRepository _inventoryRepository;
-    private IInventoryRepository _mockInventoryRepo;
+    private readonly InventoryRepository _inventoryRepository;
+    private readonly IInventoryRepository _mockInventoryRepo;
 
     public InventoryControllerIntegrationTest()
     {

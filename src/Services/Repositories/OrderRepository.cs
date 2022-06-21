@@ -1,8 +1,8 @@
-using Entities;
+﻿using Entities;
 namespace Services;
 public class OrderRepository : IOrderRepository
 {
-    private Dictionary<long, Order> _orderDictionary;
+    private readonly Dictionary<long, Order> _orderDictionary;
     private long _id;
 
     public OrderRepository()

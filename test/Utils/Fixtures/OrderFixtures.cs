@@ -1,5 +1,4 @@
-using Entities;
-using System.Collections.Generic;
+﻿using Entities;
 namespace Utils.Test;
 
 public class OrderFixtures
@@ -12,8 +11,8 @@ public class OrderFixtures
 
     public static List<Order> BuildOrders(uint count)
     {
-        List<Order> orders = new List<Order>();
-        for (int i = 1; i <= count; i++)
+        var orders = new List<Order>();
+        for (var i = 1; i <= count; i++)
         {
             orders.Add(BuildOrder(i, i, "Pending"));
         }

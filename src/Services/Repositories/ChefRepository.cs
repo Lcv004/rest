@@ -1,8 +1,8 @@
-using Entities;
+﻿using Entities;
 namespace Services;
 public class ChefRepository : IChefRepository
 {
-    private Dictionary<long, Chef> _chefDictionary;
+    private readonly Dictionary<long, Chef> _chefDictionary;
     private long _id;
 
     public ChefRepository()

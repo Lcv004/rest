@@ -1,8 +1,4 @@
-using Services;
-using Controllers;
-using IoC;
-using Xunit;
-
+﻿using Xunit;
 namespace IoC.Test;
 
 public class IoCTest
@@ -22,7 +18,7 @@ public class IoCTest
     public void GetInstance_IsSameInstance_ShouldBeEqual()
     {
         // Given
-    
+
         // When
         var result1 = Ioc.GetInstance();
         var result2 = Ioc.GetInstance();
@@ -47,7 +43,7 @@ public class IoCTest
         // Given
         Ioc.GetInstance();
         // When
-        
+
         // Then
         Assert.Throws<KeyNotFoundException>(() => Ioc.Get("UnexistentKey"));
     }

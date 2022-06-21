@@ -1,12 +1,12 @@
+﻿using Controllers;
 using Services;
-using Controllers;
 namespace IoC;
 
 public class Ioc
 {
     private static Ioc? _instance;
-    private static Dictionary<string, object> _iocInstanceDict = new Dictionary<string, object>();
-    
+    private static readonly Dictionary<string, object> _iocInstanceDict = new Dictionary<string, object>();
+
     private Ioc()
     {
         _iocInstanceDict.Add("ProductRepository", new ProductRepository());
@@ -16,7 +16,7 @@ public class Ioc
 
     public static object Get(string key)
     {
-        return _iocInstanceDict.TryGetValue(key, out object? outObj) ? outObj : throw new KeyNotFoundException($"Service was not found with key {key}.");
+        return _iocInstanceDict.TryGetValue(key, out var outObj) ? outObj : throw new KeyNotFoundException($"Service was not found with key {key}.");
     }
 
     public static Ioc GetInstance()

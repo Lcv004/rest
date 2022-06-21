@@ -1,5 +1,4 @@
-using Entities;
-using System.Collections.Generic;
+﻿using Entities;
 namespace Utils.Test;
 
 public class ProductFixtures
@@ -12,8 +11,8 @@ public class ProductFixtures
 
     public static List<Product> BuildProducts(uint count)
     {
-        List<Product> products = new List<Product>();
-        for (int i = 1; i <= count; i++)
+        var products = new List<Product>();
+        for (var i = 1; i <= count; i++)
         {
             products.Add(BuildProduct(i, "Product " + i, i));
         }
