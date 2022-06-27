@@ -1,9 +1,11 @@
-﻿namespace Processors;
+﻿using Seed;
+namespace Processors;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
+        // InitialData.Main();
         Console.WriteLine($"Main: Thread Id: {Thread.CurrentThread.ManagedThreadId}");
         Task kitchenTask = KitchenSimulator.StartAsync();
         bool flag = true;
