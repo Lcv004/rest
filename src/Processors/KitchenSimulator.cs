@@ -4,7 +4,7 @@ public class KitchenSimulator : Processor
 {
     public override void Process(int interval)
     {
-        System.Console.WriteLine("~~> ¡Hola! son las {0}.", DateTime.Now.TimeOfDay);
+        Console.WriteLine("~~> KS running.");
         Thread.Sleep(interval);
     }
 
@@ -18,21 +18,10 @@ public class KitchenSimulator : Processor
         // Not implemented
     }
 
-    public override void BeforeProcess()
-    {
-        // Not implemented
-    }
-
-    public override void AfterProcess()
-    {
-        // Not implemented
-    }
-
     public override void OnPause()
     {
         // Not implemented
     }
-
     public override void OnResume()
     {
         // Not implemented

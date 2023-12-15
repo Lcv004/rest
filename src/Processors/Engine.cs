@@ -2,14 +2,15 @@ namespace Processors;
 
 public class Engine
 {
-    private List<Processor> _processorList;
-    public KitchenSimulator kitchenSimulator;
+    private readonly List<Processor> _processorList;
+    public KitchenSimulator KS { get; set; }
     public Engine()
     {
-        kitchenSimulator = new KitchenSimulator();
-        _processorList = new List<Processor>();
-
-        _processorList.Add(kitchenSimulator);
+        KS = new();
+        _processorList = new()
+        {
+            KS
+        };
     }
 
     public void Start()

@@ -2,11 +2,11 @@ namespace Processors;
 
 public abstract class BaseThread
 {
-    private Thread _thread;
+    private readonly Thread _thread;
 
     protected BaseThread()
     {
-        _thread = new Thread(new ThreadStart(this.RunThread));
+        _thread = new Thread(new ThreadStart(RunThread));
     }
 
     // Thread methods / properties
